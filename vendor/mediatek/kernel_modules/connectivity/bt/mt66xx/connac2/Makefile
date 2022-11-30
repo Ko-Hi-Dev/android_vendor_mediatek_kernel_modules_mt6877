@@ -22,6 +22,8 @@ ifneq ($(filter yes, $(_MTK_PLAT_MT6885_EMULATION)),)
 endif
 endif
 
+ccflags-y += -Wno-error
+
 ifndef TOP
     TOP := $(srctree)/..
 endif
