@@ -6,6 +6,8 @@
 #ifndef _PLATFORM_MT6877_POS_H_
 #define _PLATFORM_MT6877_POS_H_
 
+#define connectivity_export_clk_buf_show_status_info
+
 #include <linux/types.h>
 
 unsigned int consys_emi_set_remapping_reg_mt6877(phys_addr_t, phys_addr_t);
