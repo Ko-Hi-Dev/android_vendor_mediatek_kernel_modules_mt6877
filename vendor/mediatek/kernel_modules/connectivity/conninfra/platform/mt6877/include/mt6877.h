@@ -4,10 +4,7 @@
  */
 
 #ifndef _PLATFORM_MT6877_H_
-#define _PLATFORM_MT6877_H_
-
-/*#define KERNEL_clk_buf_ctrl
-#define KERNEL_clk_buf_show_status_info */
+#define _PLATFORM_MT6877_H
 
 enum conn_semaphore_type
 {
