@@ -201,7 +201,7 @@ unsigned int consys_soc_chipid_get_mt6877(void)
 
 void consys_clock_fail_dump_mt6877(void)
 {
-	KERNEL_clk_buf_show_status_info();
+	KERNEL_clk_buf_show_status_info("");
 }
 
 int consys_enable_power_dump_mt6877(void)
