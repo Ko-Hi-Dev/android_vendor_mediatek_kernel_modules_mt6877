@@ -49,6 +49,7 @@ ccflags-y += -I$(WMT_SRC_FOLDER)/debug_utility
 endif
 
 ###############################################################################
+#make legacy bt_drv built in kernel to get wifi and bt to work before it was separate module
 
 MODULE_NAME := bt_drv
 obj-y += $(MODULE_NAME).o
