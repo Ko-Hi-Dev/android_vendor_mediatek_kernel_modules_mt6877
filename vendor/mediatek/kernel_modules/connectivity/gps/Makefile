@@ -34,6 +34,8 @@ KBUILD_MODPOST_FAIL_ON_WARNINGS := y
 # only WMT align this design flow, but gps use this also.
 #ccflags-y += -D MTK_WCN_REMOVE_KERNEL_MODULE
 
+ccflags-y += -Wno-error
+
 ifeq ($(CONFIG_ARM64), y)
     ccflags-y += -D CONFIG_MTK_WCN_ARM64
 endif
