@@ -65,7 +65,7 @@ ccflags-y += -I$(srctree)/drivers/devfreq
 ###############################################################################
 
 MODULE_NAME := gps_drv
-obj-m += $(MODULE_NAME).o
+obj-y += $(MODULE_NAME).o
 
 GPS_DRV_CONTROL_LNA := n
 GPS_DL_SUPPORT := n
