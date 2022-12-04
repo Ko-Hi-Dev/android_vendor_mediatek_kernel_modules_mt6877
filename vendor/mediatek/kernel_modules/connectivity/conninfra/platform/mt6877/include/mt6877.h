@@ -4,7 +4,7 @@
  */
 
 #ifndef _PLATFORM_MT6877_H_
-#define _PLATFORM_MT6877_H
+#define _PLATFORM_MT6877_H_
 
 enum conn_semaphore_type
 {
