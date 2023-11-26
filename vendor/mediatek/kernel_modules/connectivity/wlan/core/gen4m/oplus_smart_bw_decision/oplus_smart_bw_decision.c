@@ -99,9 +99,9 @@ void wlanSetSmartBWParams(void)
         p_params->LQ_IDLE_SLOT_RATIO_ACCEPT = 0;
         p_params->LQ_L3_SPEED_LOW = 0;
 
-        if(get_smart_bw_rom_update((int*)p_params, sizeof(SMART_BW_PARAMS_T))) {
-                prSmartBW->getSmartBWRomUpdate = true;
-        }
+      //  if(get_smart_bw_rom_update((int*)p_params, sizeof(SMART_BW_PARAMS_T))) {
+       //         prSmartBW->getSmartBWRomUpdate = true;
+    //    }
         if(p_params->SMART_BW_DBG) {
                 DBGLOG(INIT, TRACE, "wlanSetSmartBWParams:set params romupdate = %d, params[0] = %d,params[1] = %d,params[2] = %d,params[3] = %d,"
                                 "params[4] = %d,params[5] = %d,params[6] = %d,params[7] = %d,params[8] = %d,"
@@ -132,9 +132,9 @@ BOOLEAN preCheckBeforeConnect(uint8_t ucBssIndex)
         prSmartBW->needSaveLog = 0;
 
         /* SLA set rom update maybe later than the 1st WIFI auto connect during WIFI turn on, cover this scenario here */
-        if(!prSmartBW->getSmartBWRomUpdate && get_smart_bw_rom_update((int*)p_params, sizeof(SMART_BW_PARAMS_T))){
-                prSmartBW->getSmartBWRomUpdate = true;
-        }
+     //   if(!prSmartBW->getSmartBWRomUpdate && get_smart_bw_rom_update((int*)p_params, sizeof(SMART_BW_PARAMS_T))){
+     //           prSmartBW->getSmartBWRomUpdate = true;
+   //     }
         if(p_params->SMART_BW_DBG) {
                 DBGLOG(AIS, TRACE, "wlanSetSmartBWParams:set params romupdate = %d, params[0] = %d,params[1] = %d,params[2] = %d,params[3] = %d,"
                                 "params[4] = %d,params[5] = %d,params[6] = %d,params[7] = %d,params[8] = %d,"
