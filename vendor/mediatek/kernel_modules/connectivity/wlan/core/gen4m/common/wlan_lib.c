@@ -12256,7 +12256,7 @@ uint32_t wlanLinkQualityMonitor(struct GLUE_INFO *prGlueInfo, bool bFgIsOid)
 				DBGLOG(SW4, INFO,"fgIsNeedMonitorAPIOT: %d, fgIsNeedMonitorLinkTx: %d\n",
 						prAdapter->rSmartBW.fgIsNeedMonitorAPIOT, prAdapter->rSmartBW.fgIsNeedMonitorLink);
 				prLinkQualityInfo->rRecordLQSysTime = kalGetTimeTick();
-				get_L3_LQ_status(payload, sizeof(payload)/sizeof(payload[0]));
+				//get_L3_LQ_status(payload, sizeof(payload)/sizeof(payload[0]));
 				prLinkQualityInfo->iL3CSpeed = payload[1];
 				prLinkQualityInfo->iL3CongestionFlag = payload[3];
 				wlanSaveLinkQualitySmooth(prLinkQualityInfo);
